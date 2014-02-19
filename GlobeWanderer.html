@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<div align="center">
+	<head>
+		<title>
+			Globe Wanderer
+		</title>
+		<script type='text/javascript' src='GlobeWanderer.js'>
+
+		</script>
+	</head>
+
+	<body onload="display();">
+	<body bgcolor="#2E9AFE">
+	<h2> Globe Wanderer
+	</h2>
+			<div id="main">
+
+			<textarea id="output" style="background:#298A08; width:400px; height:250px; font-size: 120%;">					
+			</textarea>
+				</div>
+
+
+		<div>
+			<textarea id="alert" style="background: #298A08; height:150px;">
+			</textarea>
+		</div>
+
+		<input value="Choose a direction " type="text" id="textInput" size="50" />
+
+		<input type="button"
+           	value = "Move"
+			id = "moveButton"
+           	onclick="move(currentLocale);">
+
+		<br>
+	   </br>
+
+		<div id="buttons">
+			<input type="button"
+               	value = "North"
+               	onclick="movement(currentLocale,0);">
+
+       		 <input type="button"
+               	value = "South"
+               	onclick="movement(currentLocale,1);">
+
+        	 <input type="button"
+               	value = "East"
+               	onclick="movement(currentLocale,2);">
+
+        	 <input type="button"
+               	value = "West"
+               	onclick="movement(currentLocale,3);">
+
+			  <input type="button"
+				value = "Pick Up"
+				onclick="pickingUp();">
+
+			  <input type="button"
+				 value = "Help"
+				 onclick="help();"> 
+			</div
+		
+		
+		<p>
+		<br>
+							<b>MAP</b>
+		</p>
+		<p>
+            Russia -----		Arctic Circle -----        Scandinavia
+		</p>  
+			Asia -----         <b>North America</b> -----		Europe 
+		<p>   
+			Australia ----- 	    South America -----		    Africa
+		</p>
+	
+	</body>
+
+</html>
